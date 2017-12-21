@@ -1,4 +1,282 @@
 body {
 	margin: 0;
 	padding: 0;
+
+	font-family: 'Lato',  sans-serif;
+	font-size: 18px;
+	line-height: 34px;
+	color: #848789;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 100%;
+	min-width: 500px;
+}
+
+.main-header {
+	width: 100%;
+	height: 800px;
+
+	background-image: url(../img/background.jpg);
+	background-color: #222429;
+	background-repeat: no-repeat;
+	background-position: center 0;
+}
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+	text-align: center;
+}
+
+.menu a {
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #4d4959;
+}
+
+.menu a:hover,
+.menu a:focus {
+	opacity: 0.7;
+}
+
+.menu a:active {
+	opacity: 0.3;
+}
+
+.features {
+	text-align: center;
+}
+
+.features h2 {
+	margin: 0;
+	padding: 0;
+
+	font-size: 18px;
+	color: #353738;
+	text-transform: uppercase;
+}
+
+.slider {
+	text-align: center;
+}
+
+.slider-item h3 {
+	margin: 0;
+	padding: 0;
+
+	font-size: 18px;
+	font-weight: 700;
+	color: #353738;
+}
+
+.slider-item p {
+	font-style: italic;
+}
+
+.shop {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.shop-container {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	flex-wrap: wrap;
+	width: 33.33%;
+	height: 534px;
+}
+
+.shop-item {
+	position: relative;
+	display: block;
+}
+
+.shop-item:hover::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	font-size: 0;
+
+	background-image: url(../img/hover-shop.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-color: rgba(100, 194, 158, 0.8);
+
+	cursor: pointer;
+}
+
+.shop-img-01 {
+	width: 50%;
+	height: 50%;
+
+	background-image: url(../img/img-01.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.shop-img-02 {
+	width: 50%;
+	height: 50%;
+
+	background-image: url(../img/img-02.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.shop-img-03 {
+	width: 100%;
+	height: 50%;
+
+	background-image: url(../img/img-03.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.shop-img-04 {
+	width: 50%;
+	height: 100%;
+
+	background-image: url(../img/img-04.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.shop-img-05 {
+	width: 50%;
+	height: 100%;
+
+	background-image: url(../img/img-05.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.shop-img-06 {
+	width: 100%;
+	height: 50%;
+
+	background-image: url(../img/img-06.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.shop-img-07 {
+	width: 50%;
+	height: 50%;
+
+	background-image: url(../img/img-07.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.shop-img-08 {
+	width: 50%;
+	height: 50%;
+
+	background-image: url(../img/img-08.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.shop-discover {
+	flex-basis: 100%;
+	padding: 75px 0;
+
+	background-color: #282f35;
+	text-align: center;
+}
+
+.shop-discover button {
+	padding: 5px 60px;
+
+	font: inherit;
+	font-size: 14px;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+}
+
+.shop-discover button:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.enter-mail {
+	text-align: center;
+}
+
+.enter-mail h3 {
+	font-style: italic;
+	font-weight: 400;
+}
+
+.enter-mail input {
+	padding: 15px 25px;
+	padding-bottom: 13px;
+	width: 400px;
+	
+	font: inherit;
+	font-size: 20px;
+	line-height: 24px;
+	color: #929292;
+
+	border: 1px solid #d3d7d9;
+	box-sizing: border-box;
+}
+
+.enter-mail button {
+	padding: 15px 25px;
+
+	font: inherit;
+	font-size: 24px;
+	line-height: 24px;
+	color: #ffffff;
+	text-transform: uppercase;
+
+	background-color: #64c29e;
+	border: none;
+	cursor: pointer;
+}
+
+.enter-mail button:hover {
+	opacity: 0.7;
+}
+
+.footer-address {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.footer-address b {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.footer-address span {
+	font-style: italic;
+}
+
+.footer-social-list {
+	list-style: none;
+}
+
+.footer-social-item a:hover {
+	opacity: 0.7;
 }
